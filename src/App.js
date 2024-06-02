@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import RecipeList from "./components/RecipeList";
 import AddRecipeForm from "./components/AddRecipeForm";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import "./App.css";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <h1>Recipe Book</h1>
       <AddRecipeForm addRecipe={addRecipe} />
       <RecipeList recipes={recipes} />
+      <SpeedInsights />
     </div>
   );
 }
